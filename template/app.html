@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banglore Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body style="background-color:rgb(0, 2, 48);">
+
+<h1>House Price Prediction </h1>
+<br></br>
+<form class="form">
+	<h2>Area (Square Feet)</h2>
+    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+	<h2>BHK</h2>
+	<div >
+		<select class="bhk" name = "bhk_name" id ="uibhk">
+                  <option value="" disabled="disabled" selected="selected">Choose a value</option>
+                  <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+	</div>
+	</form>
+<form class="form">
+  <h2>Location</h2>
+	<div>
+  <select class="location" name="loc" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>Electronic City</option>
+        <option>Rajaji Nagar</option>
+  </select>
+</div>
+<h2>Area Type</h2>
+<div>
+<select class="area_type" name="area" id="uiarea">
+  <option value="" disabled="disabled" selected="selected">Choose Area Type</option>
+  <option>built-up  area</option>
+      <option>carpet  area</option>
+      <option>super built-up  area</option>
+      <option>plot  area</option>
+</select>
+</div>
+<h2>Bath</h2>
+<div>
+          <select class="bath" name = "bath_name" id ="uibath">
+  <option value="" disabled="disabled" selected="selected">Choose a value</option>
+  <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+</div>
+</div>
+	<h2>Balcony</h2>
+	<div>
+            <select class="balcony" name = "balcony_name" id ="uibalcony">
+		<option value="" disabled="disabled" selected="selected">Choose a value</option>
+		<option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        
+      </select>
+	</div>
+		
+	<button class="submit" name = "price" onclick="onClickedEstimatePrice_new()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>
